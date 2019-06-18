@@ -6,18 +6,18 @@
 * [Setup](#setup)
 
 ## General info
-Project for studies.
-Made by students of the Silesian University of Technology.
-Inspired by Flappy Bird.
+Project for studies.  
+Made by students of the Silesian University of Technology.  
+Inspired by Flappy Bird.  
 
 ## Technologies
 Project is created with:
 * C++
-* libarary SFML
+* library SFML
 * Visual Studio 2015
 
 ## Sources
-This app is inspired by Flappy Bird.
+This app is inspired by Flappy Bird.  
 https://www.udemy.com/flappy-bird-sfml/
 
 ## Collaborators
@@ -26,4 +26,4 @@ https://www.udemy.com/flappy-bird-sfml/
 * https://github.com/farad47
 
 ## Setup
-main.cpp
+main.cpp  
