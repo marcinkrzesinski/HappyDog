@@ -6,12 +6,14 @@
 #include "Pipe.hpp"
 #include "Land.hpp"
 #include "Dog.hpp"
+#include "Collision.hpp"
+#include "Flash.hpp"
+#include "HUD.hpp"
 
 namespace System
 {
 	class GameState : public State
 	{
-
 	public:
 		GameState(GameDataRef data);
 
@@ -31,7 +33,15 @@ namespace System
 		Pipe *pipe;
 		Land *land;
 		Dog *dog;
+		Collision collision;
+		Flash *flash;
+		HUD *hud;
 
 		sf::Clock clock;
+
+		int _gameState;
+
+		int _score;
+
 	};
 }

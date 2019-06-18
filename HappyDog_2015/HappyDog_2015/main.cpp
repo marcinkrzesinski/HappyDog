@@ -6,7 +6,7 @@
 int main()
 {
 	System::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "HappyDog");
-	//System::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Flapyy Bird");
+	//System::Game(SCREEN_WIDTH, SCREEN_HEIGHT, "Happy Dog");
 
 
 	return EXIT_SUCCESS;

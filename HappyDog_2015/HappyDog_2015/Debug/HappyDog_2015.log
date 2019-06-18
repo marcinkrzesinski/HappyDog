@@ -1,3 +1,10 @@
-﻿  Dog.cpp
-  HappyDog_2015.vcxproj -> D:\HappyDog_2015\HappyDog_2015\Debug\HappyDog_2015.exe
-  HappyDog_2015.vcxproj -> D:\HappyDog_2015\HappyDog_2015\Debug\HappyDog_2015.pdb (Full PDB)
+﻿  Land.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\land.cpp : fatal error C1041: cannot open program database 'D:\HappyDog_2015\HappyDog_2015\HappyDog_2015\Debug\vc140.idb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+  GameState.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\gamestate.cpp : fatal error C1041: cannot open program database 'D:\HappyDog_2015\HappyDog_2015\HappyDog_2015\Debug\vc140.pdb'; if multiple CL.EXE write to the same .PDB file, please use /FS
+  Dog.cpp
+  Collision.cpp
+  Generating Code...
+  Compiling...
+  MainMenuState.cpp
+  Generating Code...

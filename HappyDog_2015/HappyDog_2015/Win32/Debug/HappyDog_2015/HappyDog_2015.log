@@ -1,0 +1,34 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(367,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+  Dog.cpp
+  Generating Code...
+  Compiling...
+  main.cpp
+  SplashState.cpp
+  Pipe.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\pipe.cpp(16): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\pipe.cpp(24): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\pipe.cpp(24): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\pipe.cpp(33): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\pipe.cpp(43): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  MainMenuState.cpp
+  Land.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\land.cpp(30): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  HUD.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\hud.cpp(18): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+  GameState.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\gamestate.cpp(89): warning C4018: '<': signed/unsigned mismatch
+d:\happydog_2015\happydog_2015\happydog_2015\gamestate.cpp(101): warning C4018: '<': signed/unsigned mismatch
+d:\happydog_2015\happydog_2015\happydog_2015\gamestate.cpp(115): warning C4018: '<': signed/unsigned mismatch
+  GameOverState.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\gameoverstate.cpp(60): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\gameoverstate.cpp(61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\gameoverstate.cpp(68): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\gameoverstate.cpp(75): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Flash.cpp
+d:\happydog_2015\happydog_2015\happydog_2015\flash.cpp(18): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\flash.cpp(22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\flash.cpp(30): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+d:\happydog_2015\happydog_2015\happydog_2015\flash.cpp(34): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Generating Code...
+  HappyDog_2015.vcxproj -> D:\HappyDog_2015\HappyDog_2015\Debug\HappyDog_2015.exe
+  HappyDog_2015.vcxproj -> D:\HappyDog_2015\HappyDog_2015\Debug\HappyDog_2015.pdb (Full PDB)

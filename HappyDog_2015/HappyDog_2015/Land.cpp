@@ -33,8 +33,6 @@ namespace System
 		}
 	}
 
-
-
 	void Land::DrawLand()
 	{
 		for (unsigned short int i = 0; i < _landSprites.size(); i++)
@@ -43,4 +41,10 @@ namespace System
 		}
 
 	}
+
+	const std::vector<sf::Sprite> &Land::GetSprites() const
+	{
+		return _landSprites;
+	}
+
 }

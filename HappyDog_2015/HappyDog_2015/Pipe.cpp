@@ -26,6 +26,7 @@ namespace System
 		pipeSprites.push_back(sprite);
 
 	}
+
 	void Pipe::SpawnInvisiblePipe()
 	{
 		sf::Sprite sprite(_data->assets.GetTexture("Pipe Up"));
@@ -33,8 +34,17 @@ namespace System
 
 		sprite.setColor(sf::Color(0, 0, 0, 0));
 		pipeSprites.push_back(sprite);
-
 	}
+
+	void Pipe::SpawnScoringPipe()
+	{
+		sf::Sprite sprite(_data->assets.GetTexture("Scoring Pipe"));
+
+		sprite.setPosition(_data->window.getSize().x, 0);
+
+		scoringPipes.push_back(sprite);
+	}
+
 	void Pipe::MovePiepes(float dt)
 	{
 		for (unsigned short int i = 0; i < pipeSprites.size(); i++)
@@ -50,11 +60,22 @@ namespace System
 			}
 		}
 
-		std::cout << pipeSprites.size() << std::endl;
+		for (unsigned short int i = 0; i < scoringPipes.size(); i++)
+		{
+			if (scoringPipes.at(i).getPosition().x < 0 - scoringPipes.at(i).getGlobalBounds().width) //<0 delete pipe.
+			{
+				scoringPipes.erase(scoringPipes.begin() + i);
+			}
+			else
+			{
+				float movement = PIPE_MOVEMENT_SPEED * dt;
+				scoringPipes.at(i).move(-movement, 0);
+			}
+		}
+
+		//std::cout << pipeSprites.size() << std::endl;
 
 	}
-
-
 
 	void Pipe::DrawPipes()
 	{
@@ -68,5 +89,17 @@ namespace System
 	{
 		_pipeSpawnYOffset = rand() % (_landHeight + 1);
 	}
+
+	const std::vector<sf::Sprite> &Pipe::GetSprites() const
+	{
+		return pipeSprites;
+	}
+
+	std::vector<sf::Sprite> &Pipe::GetScoringSprites()
+	{
+		return scoringPipes;
+	}
+
+
 
 }

@@ -18,18 +18,25 @@ namespace System
 
 		void Animate(float dt);
 
+		void Update(float dt);
+
+		void Tap();
+
+		const sf::Sprite &GetSprite() const;
+
 	private:
 		GameDataRef _data;
 
 		sf::Sprite _dogSprite;
-
 		std::vector<sf::Texture> _animationFrames;
 
 		unsigned int _animationIterator;
 
 		sf::Clock _clock;
 
+		sf::Clock movementClock;
 
+		int _dogState;
 
 	};
 }

@@ -15,6 +15,8 @@ namespace System
 		void MoveLand(float dt);
 		void DrawLand();
 
+		const std::vector<sf::Sprite> &GetSprites() const;
+
 	private:
 		GameDataRef _data;
 

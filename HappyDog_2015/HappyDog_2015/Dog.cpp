@@ -12,9 +12,11 @@ namespace System
 		//_animationFrames.push_back(_data->assets.GetTexture("Dog Frame 4"));
 
 		_dogSprite.setTexture(_animationFrames.at(_animationIterator));
+		//_dogSprite.setTexture(_data->assets.GetTexture("Dog Frame 1"));
 
+		_dogSprite.setPosition((_data->window.getSize().x / 4 )- (_dogSprite.getGlobalBounds().width / 2), (_data->window.getSize().y / 2) - (_dogSprite.getGlobalBounds().height / 2));
+		_dogState = DOG_STATE_STILL;
 
-		_dogSprite.setTexture(_data->assets.GetTexture("Dog Frame 1"));
 	}
 
 	void Dog::Draw()
@@ -41,4 +43,34 @@ namespace System
 			_clock.restart();
 		}
 	}
+
+	void Dog::Update(float dt)
+	{
+		if (DOG_STATE_FALLING == _dogState)
+		{
+			_dogSprite.move(0, GRAVITY * dt);
+		}
+		else if (DOG_STATE_FLYING == _dogState)
+		{
+			_dogSprite.move(0, -FLYING_SPEED * dt);
+		}
+
+		if (movementClock.getElapsedTime().asSeconds() > FLYING_DURATION)
+		{
+			movementClock.restart();
+			_dogState = DOG_STATE_FALLING;
+		}
+	}
+
+	void Dog::Tap()
+	{
+		movementClock.restart();
+		_dogState = DOG_STATE_FLYING;
+	}
+
+	const sf::Sprite &Dog::GetSprite() const
+	{
+		return _dogSprite;
+	}
+
 }
